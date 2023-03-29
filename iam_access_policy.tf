@@ -1,6 +1,6 @@
-resource "aws_iam_user_policy" "suresh_ro" {
-  name = "suresh-policy-s3"
-  user = aws_iam_user.suresh.name
+resource "aws_iam_user_policy" "sai_ro" {
+  name = "sai-policy-s3"
+  user = aws_iam_user.sai.name
 
   policy = jsonencode({
     "Version" : "2012-10-17",
@@ -21,9 +21,9 @@ resource "aws_iam_user_policy" "suresh_ro" {
   })
 }
 
-resource "aws_iam_user_policy" "sudheer_rw" {
+resource "aws_iam_user_policy" "sai_rw" {
   name = "suresh-policy-s3"
-  user = aws_iam_user.sudheer.name
+  user = aws_iam_user.sai.name
 
   policy = jsonencode({
     "Version" : "2012-10-17",

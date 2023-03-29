@@ -7,7 +7,7 @@ resource "aws_s3_bucket" "suresh-demo" {
   }
 }
 
-resource "aws_s3_bucket" "sudheer-demo" {
+resource "aws_s3_bucket" "sai-demo" {
   bucket = var.bucket_read_write_access
   acl    = "public-read"
   policy = file("policy_rw.json")
